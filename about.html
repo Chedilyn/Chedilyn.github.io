@@ -5,60 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me | Chedilyn Aiza Duat</title>
   <style>
-    /* Full-page background */
     body {
-      background: url('tech.png') center/cover no-repeat fixed;
-      color: #e5e7eb;
-      font-family: Arial, Helvetica, sans-serif;
+      background: #7184ee; /* Background from your image */
+      color: #1a1a1a;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
     }
 
-    /* Navigation bar */
     nav {
-      background: rgba(2,6,23,0.85);
-      padding: 12px;
+      background: rgba(2, 6, 23, 0.9);
+      padding: 15px;
       text-align: center;
     }
     nav a {
       margin: 0 15px;
-      color: #e5e7eb;
+      color: #ffffff;
       font-weight: bold;
       text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.9rem;
     }
-    nav a:hover {
-      color: #60a5fa;
+    nav a:hover { color: #60a5fa; }
+
+    /* Main Container centered */
+    .container {
+      max-width: 800px; /* Narrower for better reading in center */
+      margin: 40px auto;
+      padding: 40px;
+      text-align: center; /* Centers text and inline elements */
     }
 
-    /* About section */
-    section {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 20px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-      background: rgba(2,6,23,0.75); /* semi-transparent overlay for readability */
-      border-radius: 20px;
-    }
-
-    section div {
-      background: rgba(2,6,23,0.8);
-      padding: 30px;
-      border-radius: 20px;
-    }
-
-    h2 {
-      color: #60a5fa;
+    .main-title {
+      font-size: 4rem;
+      font-weight: 900;
       margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+    }
+
+    /* Profile Image Style */
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%; /* Makes it circular */
+      object-fit: cover;
+      margin: 20px auto 40px;
+      display: block;
+      border: 5px solid rgba(255,255,255,0.2);
+    }
+
+    .content-block {
+      text-align: left; /* Keeps text readable while the block itself is centered */
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 40px;
+      border-bottom: 2px solid #1a1a1a;
+      display: inline-block;
+    }
+
+    p { margin-bottom: 20px; }
+
+    .book-author {
+      font-weight: bold;
+      margin-top: 20px;
+      display: block;
     }
 
     ul {
       list-style: none;
-      line-height: 1.9;
+      padding: 0;
     }
+
+    li { margin-bottom: 5px; }
+
   </style>
 </head>
 <body>
@@ -71,24 +96,47 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <section>
-    <div>
-      <h2>About Me</h2>
-      <p>
-        I am a Computer Engineering student with a strong interest in programming. I enjoy learning how code works, understanding program logic, and solving problems through programming exercises and academic projects. I am continuously improving my skills by studying different programming concepts and practicing coding. This portfolio represents my learning progress, skills, and growth as I continue my journey.
-      </p>
-    </div>
+  <div class="container">
+    <h1 class="main-title">ABOUT ME</h1>
 
-    <div>
-      <h2>Quick Facts</h2>
+    <img src="your-image.jpg" alt="Chedilyn Aiza Duat" class="profile-img">
+
+    <div class="content-block">
+      <p>
+        I'm a skilled and adaptable designer with experience in UX, UI design, web design, animation, special effects, video production, advertising, and drawing. I am extremely enthusiastic about the projects I work on and take great pride in the design work I create.
+      </p>
+
+      <p>
+        I am comfortable working alone, but I find that sharing ideas and collaborating in a team often helps to find the best solution for the client. Being an excellent listener and a good communicator is crucial for a designer.
+      </p>
+
+      <h3>Favorite Design Books</h3>
+      
+      <span class="book-author">Susan Weinschenk</span>
       <ul>
-        <li>🎓 Computer Engineering</li>
-        <li>🔧 Embedded & IoT Projects</li>
-        <li>💻 Software & Web Development</li>
-        <li>⚙️ Automation Enthusiast</li>
+        <li>- 100 Things Every Designer Needs to Know About People</li>
+        <li>- Neuro Web Design</li>
       </ul>
+
+      <span class="book-author">Don Norman</span>
+      <ul>
+        <li>- The Design of Everyday Things</li>
+        <li>- Emotional Design</li>
+      </ul>
+
+      <h3>Skills</h3>
+      <ul>
+        <li>Adobe Photoshop, InDesign, Illustrator</li>
+        <li>After Effects, Premiere, Acrobat</li>
+        <li>Sketch, Axure RP, Balsamiq</li>
+        <li>Strong UI and UX design knowledge</li>
+        <li>Basic HTML and CSS knowledge</li>
+      </ul>
+
+      <h3>Reference</h3>
+      <p>If you would like a reference, please don't hesitate to ask.</p>
     </div>
-  </section>
+  </div>
 
 </body>
 </html>
