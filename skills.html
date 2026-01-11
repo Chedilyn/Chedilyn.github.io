@@ -5,14 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skills | Chedilyn Aiza Duat</title>
   <style>
-    body { background:#020617; color:#e5e7eb; font-family:Arial, Helvetica, sans-serif; line-height:1.6; margin:0; padding:0; }
-    nav { background: rgba(2,6,23,0.85); padding:12px; text-align:center; }
-    nav a { margin:0 15px; color:#e5e7eb; font-weight:bold; text-decoration:none; }
-    nav a:hover { color:#60a5fa; }
-    section { max-width:1000px; margin:60px auto; padding:20px; background:url('technology.jpg') center/cover no-repeat; border-radius:20px; }
-    h2 { color:#60a5fa; margin-bottom:20px; }
-    ul { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:15px; list-style:none; padding:0; }
-    li { background: rgba(2,6,23,0.85); padding:15px; border-radius:8px; text-align:center; }
+    /* Apply background to the entire page */
+    body {
+      background: url('tech.png') center/cover no-repeat fixed;
+      color: #e5e7eb;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background: rgba(2,6,23,0.85);
+      padding: 12px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #e5e7eb;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    nav a:hover { color: #60a5fa; }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+      background: rgba(2,6,23,0.7); /* semi-transparent overlay */
+      border-radius: 20px;
+      backdrop-filter: blur(6px); /* optional nice blur effect */
+    }
+
+    h2 { color: #60a5fa; margin-bottom: 20px; }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: rgba(2,6,23,0.85);
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
