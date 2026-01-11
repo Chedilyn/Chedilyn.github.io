@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Chedilyn Aiza Duat</title>
+  <style>
+    body {
+      background: url('tech.png') center/cover no-repeat fixed; /* your background image */
+      font-family: Arial, Helvetica, sans-serif;
+      color: #e5e7eb;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Add a subtle overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5); /* dark overlay */
+      z-index: -1;
+    }
+
+    nav {
+      background: rgba(2,6,23,0.85);
+      padding: 12px;
+      text-align: center;
+      backdrop-filter: blur(5px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #e5e7eb;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    nav a:hover { color: #60a5fa; }
+
+    section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    h2 { color: #60a5fa; margin-bottom: 20px; }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(2,6,23,0.85);
+      backdrop-filter: blur(6px);
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 0 0 1px rgba(96,165,250,0.2), 0 10px 30px rgba(0,0,0,0.6);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 0 1px rgba(96,165,250,0.4), 0 20px 40px rgba(0,0,0,0.8);
+    }
+
+    .card img { width: 100%; border-radius: 10px; margin-bottom: 12px; }
+    .card h3 { margin-bottom: 10px; }
+    .card p { font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="project1.jpg" alt="RoboTap Project" />
+        <h3>RoboTap – Automated Rubber Tree Tapping Machine</h3>
+        <p>A thesis project focused on automating rubber tree tapping using sensors, motors, and a microcontroller. Designed for low power consumption and continuous operation.</p>
+      </div>
+      <div class="card">
+        <img src="project2.jpg" alt="IoT Monitoring System" />
+        <h3>IoT Monitoring System</h3>
+        <p>An IoT-based system that collects sensor data and displays it on a web dashboard for real-time monitoring.</p>
+      </div>
+      <div class="card">
+        <img src="project3.jpg" alt="Portfolio Website" />
+        <h3>Personal Portfolio Website</h3>
+        <p>A responsive portfolio website built using HTML and CSS to showcase skills, projects, and contact details.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
